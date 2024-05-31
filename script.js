@@ -1,4 +1,9 @@
-var count = new Date("Aug 13, 2024 00:00:00");
+var dates = prompt("ENTER A DATE: yyyy-mm-dd");
+
+
+
+
+var count = new Date(`${dates}, 00:00:00`);
 var x = setInterval(()=>{
     var now = new Date().getTime();
     var distance = count - now;
@@ -22,3 +27,4 @@ var x = setInterval(()=>{
     }
 
 },1000);
+
